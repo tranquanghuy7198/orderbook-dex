@@ -104,7 +104,7 @@ describe("Test OrderbookDEX", () => {
     expect(balance.toString()).to.equal("8000");
   });
 
-  it("A buyer wants to buy 1 LINK for $50", async () => {
+  it("A buyer wants to buy 1 LINK at the rate of $50/LINK", async () => {
     await this.dexFactory
       .connect(this.buyer)
       .attach(this.dexContract.address)
@@ -116,7 +116,7 @@ describe("Test OrderbookDEX", () => {
     expect(buyOrders[0]?.price?.toString()).to.equal("50");
   });
 
-  it("A seller wants to sell 1 LINK for $60", async () => {
+  it("A seller wants to sell 1 LINK at the rate of $60/LINK", async () => {
     await this.dexFactory
       .connect(this.seller)
       .attach(this.dexContract.address)
@@ -133,7 +133,7 @@ describe("Test OrderbookDEX", () => {
     expect(sellOrders[0]?.price?.toString()).to.equal("60");
   });
 
-  it("A seller wants to sell 1 LINK for $45", async () => {
+  it("A seller wants to sell 1 LINK at the rate of $45/LINK", async () => {
     await this.dexFactory
       .connect(this.seller)
       .attach(this.dexContract.address)
@@ -147,7 +147,7 @@ describe("Test OrderbookDEX", () => {
     expect(sellOrders[0]?.price?.toString()).to.equal("60");
   });
 
-  it("A seller wants to sell 10 LINK for $35", async () => {
+  it("A seller wants to sell 10 LINK at the rate of $35/LINK", async () => {
     await this.dexFactory
       .connect(this.seller)
       .attach(this.dexContract.address)
@@ -164,7 +164,7 @@ describe("Test OrderbookDEX", () => {
     expect(sellOrders[1]?.price?.toString()).to.equal("60");
   });
 
-  it("A seller wants to sell 7 LINK for $55", async () => {
+  it("A seller wants to sell 7 LINK at the rate of $55/LINK", async () => {
     await this.dexFactory
       .connect(this.seller)
       .attach(this.dexContract.address)
@@ -184,7 +184,7 @@ describe("Test OrderbookDEX", () => {
     expect(sellOrders[2]?.price?.toString()).to.equal("60");
   });
 
-  it("A buyer wants to buy 14 LINK for $57", async () => {
+  it("A buyer wants to buy 14 LINK at the rate of $57/LINK", async () => {
     await this.dexFactory
       .connect(this.buyer)
       .attach(this.dexContract.address)
@@ -201,7 +201,7 @@ describe("Test OrderbookDEX", () => {
     expect(sellOrders[1]?.price?.toString()).to.equal("60");
   });
 
-  it("A buyer wants to buy 8 LINK for $58", async () => {
+  it("A buyer wants to buy 8 LINK at the rate of $58/LINK", async () => {
     await this.dexFactory
       .connect(this.buyer)
       .attach(this.dexContract.address)
@@ -219,4 +219,4 @@ describe("Test OrderbookDEX", () => {
   });
 });
 
-// Run: npx hardhat test ./test/testOrderbookDEX.js
+// Run: npx hardhat test ./test/test-orderbook-dex.js
