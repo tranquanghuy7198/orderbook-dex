@@ -24,7 +24,7 @@ After each deployment, the address of the deployed contract is automatically wri
 
 ### Testing scripts
 
-The `testOrderbookDEX.js`, which is placed in the `test` folder, is the JS file used to test the `OrderbookDEX.sol` contract. It contains 12 test-cases which simulate the activities of placing buy and sell orders.
+The `test-orderbook-dex.js`, which is placed in the `test` folder, is the JS file used to test the `OrderbookDEX.sol` contract. It contains 12 test-cases which simulate the activities of placing buy and sell orders.
 
 ### Tools
 
